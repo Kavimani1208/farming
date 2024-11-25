@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Management - ACFS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ACFS</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#new-contract">New Contract</a></li>
+                <li><a href="#manage-contracts">Manage Contracts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- New Contract Section -->
+    <section id="new-contract" class="contract-section">
+        <h2>Create a New Contract</h2>
+        <form>
+            <label for="farmer-name">Farmer Name:</label>
+            <input type="text" id="farmer-name" name="farmer-name" required>
+
+            <label for="buyer-name">Buyer Name:</label>
+            <input type="text" id="buyer-name" name="buyer-name" required>
+
+            <label for="crop-type">Crop Type:</label>
+            <input type="text" id="crop-type" name="crop-type" required>
+
+            <label for="quantity">Quantity (kg):</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="price">Price per kg:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="delivery-date">Delivery Date:</label>
+            <input type="date" id="delivery-date" name="delivery-date" required>
+
+            <button type="submit">Create Contract</button>
+        </form>
+    </section>
+
+    <!-- Manage Contracts Section -->
+    <section id="manage-contracts" class="contract-section">
+        <h2>Manage Contracts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Contract ID</th>
+                    <th>Farmer</th>
+                    <th>Buyer</th>
+                    <th>Crop</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>Agricorp</td>
+                    <td>Wheat</td>
+                    <td>1000 kg</td>
+                    <td>$0.50/kg</td>
+                    <td>2024-10-01</td>
+                    <td>Pending</td>
+                </tr>
+                <!-- Additional contract entries can go here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Assured Contract Farming System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
